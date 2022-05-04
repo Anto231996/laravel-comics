@@ -1,3 +1,6 @@
+<div class="header-top">
+
+</div>
 <div class="header-nav">
     <div class="wrapper">
         <img src="{{asset("images/dc-logo.png")}}" alt="main dc-logo">

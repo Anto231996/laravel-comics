@@ -2,7 +2,7 @@
 
 @section('main-content')
 <div class="current-series-content">
-    <span>current series</span>
+    <h1>current series</h1>
     <div id="current-series-items" class="wrapper">
         @foreach ($comics as $comicsItem)
         <div class="item">
