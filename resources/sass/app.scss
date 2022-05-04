@@ -1,1 +1,128 @@
 //
+
+@import "partials/common";
+@import "partials/variables";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+div.header-nav{
+    height: 140px;
+
+    li{
+        display: inline;
+        margin-left: 1.7rem;
+        font-size: .8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        a{
+            color: #212121;
+        }
+
+        a.active, 
+        a:hover{
+            color: #137beb;
+        }
+    }
+}
+
+div#jumbotron{
+    height: 400px;
+    background-image: url(../images/jumbotron.jpg);
+
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+div.current-series-content{
+    height: 800px;
+    position: relative;
+    padding: 80px 0;
+    background-color: #212121;
+
+    span{
+        position: absolute;
+        top: -20px;
+        left: 200px;
+        padding: 10px 20px;
+        background-color: #137beb;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    div#current-series-items{
+        flex-wrap: wrap;
+    }
+
+}
+
+h4{
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+div.footer-top{
+    height: 400px;
+    background-image: url(../images/footer-bg.jpg);
+    background-size: cover;
+}
+
+div.footer-links > div{
+    margin-right: 50px;
+}
+
+div.footer-links{
+    display: flex;
+
+    li{
+        list-style: none;
+        font-size: .8rem;
+        margin-bottom: .3rem;
+
+        a{
+        color: gray;
+        }
+    }
+}
+
+div.footer-bottom{
+    height: 120px;
+    background-color: #333333;
+    text-transform: uppercase;
+
+    a#sign-up{
+        border: 2px solid #137beb;
+        color: white;
+        padding: 15px;
+    }
+
+    div#social{
+        display: flex;
+        color: #137beb;
+        align-items: center;
+
+        a{
+        margin-left: 1rem;
+        }
+    }
+}
+
+.item{
+    width: 200px;
+    height: 200px;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    h4{
+        font-weight: normal;
+        color: white;
+    }
+}

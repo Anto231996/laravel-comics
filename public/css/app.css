@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.header-nav {
+  height: 140px;
+}
+div.header-nav li {
+  display: inline;
+  margin-left: 1.7rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+div.header-nav li a {
+  color: #212121;
+}
+div.header-nav li a.active,
+div.header-nav li a:hover {
+  color: #137beb;
+}
+
+div#jumbotron {
+  height: 400px;
+  background-image: url(../images/jumbotron.jpg);
+}
+div#jumbotron img {
+  height: 100%;
+  width: 100%;
+}
+
+div.current-series-content {
+  height: 800px;
+  position: relative;
+  padding: 80px 0;
+  background-color: #212121;
+}
+div.current-series-content span {
+  position: absolute;
+  top: -20px;
+  left: 200px;
+  padding: 10px 20px;
+  background-color: #137beb;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+div.current-series-content div#current-series-items {
+  flex-wrap: wrap;
+}
+
+h4 {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+div.footer-top {
+  height: 400px;
+  background-image: url(../images/footer-bg.jpg);
+  background-size: cover;
+}
+
+div.footer-links > div {
+  margin-right: 50px;
+}
+
+div.footer-links {
+  display: flex;
+}
+div.footer-links li {
+  list-style: none;
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+div.footer-links li a {
+  color: gray;
+}
+
+div.footer-bottom {
+  height: 120px;
+  background-color: #333333;
+  text-transform: uppercase;
+}
+div.footer-bottom a#sign-up {
+  border: 2px solid #137beb;
+  color: white;
+  padding: 15px;
+}
+div.footer-bottom div#social {
+  display: flex;
+  color: #137beb;
+  align-items: center;
+}
+div.footer-bottom div#social a {
+  margin-left: 1rem;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+}
+.item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.item h4 {
+  font-weight: normal;
+  color: white;
+}
