@@ -1,12 +1,16 @@
 @extends('layouts.app')
 
+@section("title", 'Comics')
+
 @section('main-content')
 <div class="current-series-content">
     <h1>current series</h1>
     <div id="current-series-items" class="wrapper">
-        @foreach ($comics as $comicsItem)
+        @foreach ($comics as $index => $comicsItem)
         <div class="item">
-            <img src="{{ $comicsItem['thumb'] }}" alt="{{ $comicsItem['series'] }}">
+            <a href="{{ url("comics/$index") }}">
+                <img src="{{ $comicsItem['thumb'] }}" alt="{{ $comicsItem['series'] }}">
+            </a>
             <h5>{{ $comicsItem['series'] }}</h5>
         </div>
         @endforeach

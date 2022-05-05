@@ -25,6 +25,20 @@ div.header-top {
   height: 25px;
   background-color: #137beb;
 }
+div.header-top div {
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+div.header-top div a {
+  margin-left: 5rem;
+  color: white;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
 
 div.header-nav {
   height: 115px;
@@ -100,12 +114,15 @@ div.footer-links > div {
 div.footer-links {
   display: flex;
 }
-div.footer-links li {
+div.footer-links nav {
+  margin-right: 5rem;
+}
+div.footer-links nav li {
   list-style: none;
   font-size: 0.8rem;
   margin-bottom: 0.3rem;
 }
-div.footer-links li a {
+div.footer-links nav li a {
   color: gray;
 }
 
@@ -144,5 +161,44 @@ div.footer-bottom div#social a {
 .item h5 {
   text-transform: uppercase;
   font-weight: 500;
+  color: white;
+}
+
+section div.main-info {
+  height: 155px;
+  background-color: #0880f8;
+}
+section div.main-info div.wrapper > div a {
+  display: flex;
+  align-items: center;
+}
+section div.main-info div.wrapper > div a img {
+  width: 50px;
+  margin-right: 1rem;
+}
+section div.main-info div.wrapper > div a h4 {
+  text-transform: uppercase;
+  color: white;
+  font-weight: normal;
+}
+
+section#comic-book-details {
+  width: 65%;
+  margin: 0 auto;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section#comic-book-details div#content-product {
+  width: 60%;
+}
+section#comic-book-details div#content-product div.label-price {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: green;
+}
+section#comic-book-details div#content-product div.label-price p {
   color: white;
 }

@@ -1,6 +1,26 @@
 <div class="footer-top">
     <div class="wrapper">
         <div class="footer-links">
+            <nav>
+                <h4>dc comics</h4>
+                <ul>
+                    @foreach ($dcComicsFooterLinks as $link)
+                    <li>
+                        <a href="{{ $link['url'] }}">{{ $link['name'] }}</a>
+                    </li>    
+                    @endforeach
+                </ul>
+            </nav>
+            <nav>
+                <h4>dc</h4>
+                <ul>
+                    @foreach ($dcFooterLinks as $link)
+                    <li>
+                        <a href="{{ $link['url'] }}">{{ $link['name'] }}</a>
+                    </li>    
+                    @endforeach
+                </ul>
+            </nav>
         </div>
     </div>
 </div>
