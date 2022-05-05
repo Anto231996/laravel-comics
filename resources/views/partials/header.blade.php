@@ -1,4 +1,4 @@
-<div class="header-top">
+<div class="header-top bg-blue">
     <div>
         <a href="#">dc power visa</a>
         <a href="#">additional dc sites</a>
@@ -6,12 +6,14 @@
 </div>
 <div class="header-nav">
     <div class="wrapper">
-        <img src="{{asset("images/dc-logo.png")}}" alt="main dc-logo">
+        <a href="{{route('home')}}">
+            <img src="{{asset("images/dc-logo.png")}}" alt="main dc-logo">
+        </a>
         <nav>
             <ul>
                 @foreach ($links as $link)
                 <li>
-                    <a  class="{{ Route::currentRouteName() == $link['route-name'] ? 'active' : '' }}" href="{{ $link['route-name'] == '' ? '#' : route($link['route-name']) }} ">{{ $link['name'] }}</a>
+                    <a class="{{ Route::currentRouteName() == $link['route-name'] ? 'active' : '' }}" href="{{ $link['route-name'] == '' ? '#' : route($link['route-name'])}} ">{{ $link['name'] }}</a>
                 </li>  
                 @endforeach
             </ul>

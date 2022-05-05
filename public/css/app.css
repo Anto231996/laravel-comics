@@ -21,9 +21,16 @@ a {
   align-items: center;
 }
 
+.color-blue {
+  color: #0282f9;
+}
+
+.bg-blue {
+  background-color: #0282f9;
+}
+
 div.header-top {
   height: 25px;
-  background-color: #137beb;
 }
 div.header-top div {
   width: 65%;
@@ -58,7 +65,7 @@ div.header-nav li a {
 }
 div.header-nav li a.active,
 div.header-nav li a:hover {
-  color: #137beb;
+  color: #0282f9;
 }
 
 div#jumbotron-header {
@@ -81,28 +88,15 @@ div.current-series-content h1 {
   top: -30px;
   left: 300px;
   padding: 15px 30px;
-  background-color: #137beb;
   color: white;
   text-transform: uppercase;
 }
 div.current-series-content div#current-series-items {
   flex-wrap: wrap;
 }
-div.current-series-content span {
-  padding: 15px 30px;
-  background-color: #137beb;
-  color: white;
-  text-transform: uppercase;
-}
-
-h4 {
-  color: white;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
 
 div.footer-top {
-  height: 400px;
+  height: 450px;
   background-image: url(../images/footer-bg.jpg);
   background-size: cover;
 }
@@ -113,17 +107,29 @@ div.footer-links > div {
 
 div.footer-links {
   display: flex;
+  width: 50%;
+  flex-wrap: wrap;
 }
 div.footer-links nav {
   margin-right: 5rem;
 }
-div.footer-links nav li {
+div.footer-links nav h4 {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+div.footer-links nav ul li {
   list-style: none;
   font-size: 0.8rem;
   margin-bottom: 0.3rem;
 }
-div.footer-links nav li a {
+div.footer-links nav ul li a {
   color: gray;
+}
+div.footer-links p {
+  font-size: 0.8rem;
+  color: gray;
+  padding-top: 2rem;
 }
 
 div.footer-bottom {
@@ -132,13 +138,12 @@ div.footer-bottom {
   text-transform: uppercase;
 }
 div.footer-bottom a#sign-up {
-  border: 2px solid #137beb;
+  border: 2px solid #0282f9;
   color: white;
   padding: 15px;
 }
 div.footer-bottom div#social {
   display: flex;
-  color: #137beb;
   align-items: center;
 }
 div.footer-bottom div#social a {
@@ -166,7 +171,6 @@ div.footer-bottom div#social a {
 
 section div.main-info {
   height: 155px;
-  background-color: #0880f8;
 }
 section div.main-info div.wrapper > div a {
   display: flex;
@@ -183,12 +187,17 @@ section div.main-info div.wrapper > div a h4 {
 }
 
 section#comic-book-details {
-  width: 65%;
+  width: 60%;
   margin: 0 auto;
-  height: 500px;
+  height: 600px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+section#comic-book-details img.img-comic-book {
+  position: absolute;
+  top: -313px;
 }
 section#comic-book-details div#content-product {
   width: 60%;
@@ -197,8 +206,40 @@ section#comic-book-details div#content-product div.label-price {
   height: 50px;
   display: flex;
   align-items: center;
-  background-color: green;
+  background-color: #55ba59;
 }
-section#comic-book-details div#content-product div.label-price p {
+section#comic-book-details div#content-product div.label-price span {
   color: white;
+}
+section#comic-book-details div#content-product p {
+  line-height: 1.5rem;
+}
+
+section#comic-book-details-others {
+  height: 600px;
+  background-color: #f6f6f6;
+}
+section#comic-book-details-others div#content {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding-top: 50px;
+}
+section#comic-book-details-others div#content div#talent,
+section#comic-book-details-others div#content div#specs {
+  width: 45%;
+}
+section#comic-book-details-others div#content div#talent li,
+section#comic-book-details-others div#content div#specs li {
+  list-style: none;
+}
+section#comic-book-details-others div#content hr {
+  color: #dddddd;
+}
+
+#blue-panel {
+  height: 100px;
 }

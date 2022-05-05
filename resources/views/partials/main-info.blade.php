@@ -1,4 +1,4 @@
-<div class="main-info">
+<div class="main-info bg-blue">
     <div class="wrapper">
         <div>
             <a href="#">
