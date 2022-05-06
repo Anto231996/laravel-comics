@@ -35,8 +35,8 @@
             <hr>
             <span>Written by:</span>
             <ul>
-                @foreach ( $comicBook['writers'] as $writers)
-                <li class="color-blue">{{ $writers }}</li>
+                @foreach ( $comicBook['writers'] as $writer)
+                <li class="color-blue">{{ $writer }}</li>
                 @endforeach
             </ul>
             <hr>

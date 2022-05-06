@@ -8,7 +8,7 @@
     <div id="current-series-items" class="wrapper">
         @foreach ($comics as $index => $comicsItem)
         <div class="item">
-            <a href="{{ url("comics/$index") }}">
+            <a href="{{ route("comic-book", ['id' => $index]) }}">
                 <img src="{{ $comicsItem['thumb'] }}" alt="{{ $comicsItem['series'] }}">
             </a>
             <h5>{{ $comicsItem['series'] }}</h5>
